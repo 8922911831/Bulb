@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <script>
+function f1()
+{
+var b=document.getElementById("btn").value;
+if(b=="ON")
+{
+    document.getElementById("img1").src="on.jpg";
+    document.getElementById("btn").value="OFF";
+} 
+else
+{
+    document.getElementById("img1").src="off.jpg";
+    document.getElementById("btn").value="ON";
+}
+}
+        </script>
+    </head>
+    <body>
+        <h1><center>Bulb Ko Jalane Ke Liye Button Ko Dabaye</center></h1>
+        <hr>
+        <center>
+            <img src="off.jpg" id="img1" height="400px" width="350px"/><br><br>
+            <input type="button" id="btn" onclick="f1()" value="ON" style="background-color: navy;font-size: 25px;color: white;"/>
+        </center>
+    </body>
+</html>
